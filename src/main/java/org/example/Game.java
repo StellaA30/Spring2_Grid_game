@@ -44,11 +44,10 @@ public class Game {
                 newColumn++;
                 break;
         }
-//        System.out.println("After move: Row: " + newRow + ", Column: " + newColumn);
+
 
         if (isMoveValid(newRow, newColumn)) {
             char cellValue = grid.getCell(newRow, newColumn);
-//            System.out.println("Cell Value: " + cellValue);
             if (cellValue == '-') {
                 grid.setCell(player.getRow(), player.getColumn(), '-');
                 player.move(newRow, newColumn);

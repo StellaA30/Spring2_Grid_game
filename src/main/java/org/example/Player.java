@@ -6,7 +6,7 @@ public class Player {
 
     private int row;
     private int column;
-    private static Random random = new Random(); //static field for random number generation
+    Random random = new Random(); //static field for random number generation
 
     public Player(int row, int column){
         //Initialise player at random position within the grid
@@ -20,6 +20,8 @@ public class Player {
         this.row = newRow;
         this.column = newColumn;
     }
+
+
 
     public int getRow() {
         return row;
