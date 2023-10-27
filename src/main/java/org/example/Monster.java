@@ -30,4 +30,8 @@ public class Monster {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setSymbol(char symbol) {
+        this.symbol = symbol;
+    }
 }
